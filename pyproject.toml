@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ses_sandbox"
+version = "0.1.0"
+description = ""
+authors = ["かずのこ <k42un0k0.put1put1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ses_sandbox"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.26.37"
+boto3-stubs-lite = {extras = ["ses", "sesv2"], version = "^1.26.105"}
+python-dotenv = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
